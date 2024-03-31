@@ -1,0 +1,6 @@
+@SteveProjectServer_HostAddress = http://localhost:5138
+
+GET {{SteveProjectServer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
