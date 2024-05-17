@@ -24,7 +24,7 @@ namespace GameModel.Server.Controllers
             _env = env;
             _userManager = userManager;
         }
-        [HttpGet]
+        [HttpPost]
         public async Task<ActionResult> Import()
         {
             var path = Path.Combine(
@@ -141,7 +141,7 @@ namespace GameModel.Server.Controllers
                 Publishers = numberOfPublishersAdded
             });
         }
-        [HttpGet("User")]
+        [HttpPost("User")]
         public async Task<ActionResult> SeedUser()
         {
             (string name, string email) = ("user1", "comp584@csun.edu");
